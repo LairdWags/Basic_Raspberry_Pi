@@ -1,0 +1,23 @@
+# Node Red Installation
+
+Following are the Node Red activites performed on new Raspberry Pi.
+
+
+Make sure any required modules are present:
+	sudo apt install build-essential git
+	
+	
+Make sure any required modules are present:
+	bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
+	
+	
+Make sure any required modules are present:
+	sudo systemctl enable nodered.service
+	
+	
+Start the Service
+	sudo node-red-start
+
+
+Make sure any required modules are present:
+  sudo systemctl enable nodered.service
