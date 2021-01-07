@@ -1,0 +1,10 @@
+# Install.txt
+
+Download latest software:
+	https://www.arduino.cc/en/Main/Software
+
+Unzip the file
+	Right click on file and select Extract Here
+	
+Install the software
+	Double click on install.sh and select Execute
