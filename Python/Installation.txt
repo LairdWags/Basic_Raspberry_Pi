@@ -1,0 +1,40 @@
+# Installation.txt
+
+Installing Python
+
+
+Installing pre-requisites and dependencies
+	sudo apt-get install -y build-essential tk-dev libncurses5-dev libncursesw5-dev libreadline6-dev libdb5.3-dev libgdbm-dev libsqlite3-dev libssl-dev libbz2-dev libexpat1-dev liblzma-dev zlib1g-dev libffi-dev tar wget vim
+
+
+Download Python
+	wget https://www.python.org/ftp/python/3.8.0/Python-3.8.0.tgz 
+
+
+Install Python 3.8 (run each line individually)
+	sudo tar zxf Python-3.8.0.tgz
+	cd Python-3.8.0
+	sudo ./configure --enable-optimizations
+	sudo make -j 4
+	sudo make altinstall
+
+
+Make Python 3.8 as the default version
+	echo "alias python=/usr/local/bin/python3.8" >> ~/.bashrc
+	
+		
+Installing pre-requisites and dependencies
+	sudo apt-get install -y build-essential tk-dev libncurses5-dev
+
+
+Source the file
+	source ~/.bashrc
+
+
+Confirm the Version
+	Python -V 
+
+	
+Clean up
+	sudo rm -rf Python-3.8.0.tgz
+	sudo rm -rf Python-3.8.0 
