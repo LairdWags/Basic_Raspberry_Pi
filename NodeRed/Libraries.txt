@@ -1,0 +1,24 @@
+# Libraries.txt
+
+These are the libraries that I've added to Node Red.
+
+  To install a library use:
+    npm install <library>
+  
+Monitor CPU Usage
+  node-red-contrib-cpu
+
+Obtain Operating System and CPU Information
+  node-red-contrib-os
+  
+Send a message/trigger at regular intervals
+  node-red-contrib-interval
+  
+  
+Adding Palettes to Node Red
+  1) Select the hamburger menu
+  2) Select Manage palette
+  3) Select the Install tab
+  4) Search for desired Library/Module
+  5) Select Install
+  
