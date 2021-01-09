@@ -1,0 +1,15 @@
+# Node-RED Dashboard Installation
+
+Following are the Node Red activites performed to install Node-RED Dashboard on new Raspberry Pi.
+
+node-red-stop
+cd ~/.node-red
+npm install node-red-dashboard
+sudo reboot
+
+To open Node-RED use:
+  http://localhost:1880
+  
+To open Node-RED Dashboard use:
+  http://localhost:1880/ui
+  
