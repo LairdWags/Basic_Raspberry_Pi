@@ -1,0 +1,19 @@
+
+# Installation of Mosquitto MQTT Broker
+
+To install Mosquitto:
+  sudo apt install -y mosquitto mosquitto-clients
+  
+To  auto-start Mosquitto on boot up:
+  sudo systemctl enable mosquitto.service
+  
+Checking installation version:
+  mosquitto -v
+  
+Testing Mosquitto installation:
+In Command Window #1, subsribe to topic (Control Z to quit):
+  mosquitto_sub -d -t testTopic
+In Command Window #2, publish to topic:
+  mosquitto_pub -d -t testTopic -m "Hello World!"
+Should see results in Command Window #1.
+
