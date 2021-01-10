@@ -1,0 +1,6 @@
+# ReadMe
+
+A basic Node-RED Flow to gather the CPU Load and Temperature.
+  ... and push to Node-RED Dashboard.
+  ... and publish to Mosquitto MQTT Broker.
+
