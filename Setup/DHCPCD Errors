@@ -1,0 +1,10 @@
+After setting up Raspberry Pi, creating a new user, granting that user sudo permissions,
+it still was not able to edit the network using GUI.The error being returned was:
+
+   Config Error Saving /etc/dhcpcd.conf the dhcpcd configuration file is not writable
+   
+The reason for this, the standard PI user was a member of additional groups that the
+new user was not. To resolve, add the new user to the netdev group.
+
+  sudo -i
+  usermod -a -G netdev NewUserName
