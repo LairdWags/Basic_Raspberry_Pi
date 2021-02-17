@@ -1,0 +1,25 @@
+# Creating users and granting permissions to MySQL
+
+# Connect to MySQL
+sudo mysql -u root -p ********
+
+# Create the User
+CREATE USER 'username'@localhost IDENTIFIED BY 'password';
+
+# Confirm creation of User
+SELECT User FROM mysql.user;
+
+# Grant Privileges to User
+GRANT ALL PRIVILEGES ON *.* TO 'username'@localhost IDENTIFIED BY 'password';
+
+# Another Example
+GRANT SELECT, INSERT, UPDATE ON *.* TO 'username'@localhost IDENTFIED BY 'password';
+
+# Refresh the privileges after the changes
+FLUSH PRIVILEGES;
+
+# Verify the Privileges
+SHOW GRANTS FOR 'username'@localhost;
+
+# To Remove the User
+DROP USER 'username'@localhost;
