@@ -15,4 +15,9 @@ Add a user with the following command:
   sudo mosquitto_passwd -c /etc/mosquitto/pwfile username
 Where "username" is the desired name.
   
-
+Testing Mosquitto installation with security:
+In Command Window #1, subsribe to topic (Control Z to quit):
+  mosquitto_sub -d -u username -P password -t testTopic
+In Command Window #2, publish to topic:
+  mosquitto_pub -d -u username -P password -t testTopic -m "Hello, World!"
+Should see results in Command Window #1.
