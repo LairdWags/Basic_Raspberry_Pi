@@ -1,0 +1,18 @@
+
+# Adding Security to Mosquitto
+Open the Configuration file:
+  sudo nano /etc/mosquitto/mosquitto.conf
+  
+Remove or comment out the last line:
+  include_dir /etc/mosquitto/conf.d
+  
+Add the following lines. They will tell the broker, listening on port 1883, to prevent any communications from devices that do not have a valid username and password.
+  allow_anonymous false
+  password_file /etc/mosquitto/pwfile
+  listener 1883
+
+Add a user with the following command:
+  sudo mosquitto_passwd -c /etc/mosquitto/pwfile username
+Where "username" is the desired name.
+  
+
